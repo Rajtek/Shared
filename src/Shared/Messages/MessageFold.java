@@ -9,20 +9,13 @@ package Shared.Messages;
  *
  * @author Rajtek
  */
-public class MessageJoinTable extends Message{
-    private final int id;
-    
-    
-    public MessageJoinTable(String source, int  id) {
+public class MessageFold extends Message{
+    public MessageFold(String source) {
         super(source);
-        this.id=id;
-    }
-    public int getID(){
-        return id;
     }
 
     @Override
     public void performAction(Shared.Model.ControlerInterface controler) {
-        controler.reactToMessageJoinTable(source, id);
+        controler.reactToMessageFold();
     }
 }

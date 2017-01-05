@@ -5,24 +5,28 @@
  */
 package Shared.Messages;
 
+import Shared.Model.Table;
+
 /**
  *
  * @author Rajtek
  */
-public class MessageJoinTable extends Message{
-    private final int id;
-    
-    
-    public MessageJoinTable(String source, int  id) {
+public class MessageTableStatus extends Message{
+   
+    private final Table table;
+    public MessageTableStatus(String source, Table table) {
         super(source);
-        this.id=id;
-    }
-    public int getID(){
-        return id;
+        this.table=table;
     }
 
+    public Table getTable() {
+        return table;
+    }
+    
     @Override
     public void performAction(Shared.Model.ControlerInterface controler) {
-        controler.reactToMessageJoinTable(source, id);
+        controler.reactToMessageTableStatus(table);
     }
+    
+
 }

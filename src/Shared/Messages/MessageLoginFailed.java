@@ -16,6 +16,6 @@ public class MessageLoginFailed extends Message{
 
     @Override
     public void performAction(Shared.Model.ControlerInterface controler) {
-        controler.ReactToMessageLoginFailed();
+        controler.reactToMessageLoginFailed();
     }
 }

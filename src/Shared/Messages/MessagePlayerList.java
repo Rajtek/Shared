@@ -6,7 +6,6 @@
 package Shared.Messages;
 
 import Shared.Model.Player;
-import java.util.List;
 
 /**
  *
@@ -14,25 +13,31 @@ import java.util.List;
  */
 public class MessagePlayerList extends Message{
     private Player[] players = new Player[10];
-    private int maxPlayers;
-    
+    private final int maxPlayers;
+    private final int id;
     public int getMaxPlayers() {
         return maxPlayers;
     }
     
     
-    public MessagePlayerList(String source, Player[] players, int maxPlayers ) {
+    public MessagePlayerList(String source, Player[] players, int maxPlayers, int id ) {
         super(source);
         this.players=players;
         this.maxPlayers=maxPlayers;
+        this.id=id;
     }
+
+    public int getId() {
+        return id;
+    }
+    
     public Player[] getPlayersList(){
         return players;
     }
 
     @Override
     public void performAction(Shared.Model.ControlerInterface controler) {
-        controler.ReactToMessagePlayerList(players, maxPlayers);
+        controler.reactToMessagePlayerList(players, maxPlayers, id);
     }
     
 }

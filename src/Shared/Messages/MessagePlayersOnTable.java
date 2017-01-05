@@ -31,7 +31,7 @@ public class MessagePlayersOnTable extends Message{
 
     @Override
     public void performAction(Shared.Model.ControlerInterface controler) {
-        controler.ReactToMessagePlayersOnTable(players);
+        controler.reactToMessagePlayersOnTable(players , maxPlayers);
     }
     
 }

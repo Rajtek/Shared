@@ -25,6 +25,6 @@ public class MessageTablesList extends Message implements Serializable{
 
     @Override
     public void performAction(Shared.Model.ControlerInterface controler) {
-        controler.ReactToMessageTablesList(tablesList);
+        controler.reactToMessageTablesList(tablesList);
     }
 }

@@ -13,9 +13,19 @@ import java.util.List;
  * @author Rajtek
  */
 public interface ControlerInterface {
-    public void ReactToMessageLoginFailed();
-    public void ReactToMessageLoginSuccessful(Player player, List<Table> tablesList);
-    public void ReactToMessageTablesList(List<Table> tablesList);
-    public void ReactToMessagePlayerList(Player[] playerList, int maxPlayers);
-    public void ReactToMessagePlayersOnTable(Player[] playerlist);
+    public void reactToMessageLoginFailed();
+    public void reactToMessageLoginSuccessful(Player player, List<Table> tablesList);
+    public void reactToMessageTablesList(List<Table> tablesList);
+    public void reactToMessagePlayerList(Player[] playerList, int maxPlayers, int id);
+    public void reactToMessagePlayersOnTable(Player[] playerlist, int id);
+    
+    
+    public void reactToMessageCall(int call);
+    public void reactToMessageCheck();
+    public void reactToMessageFold();
+    public void reactToMessageLogin(String source, String login);
+    public void reactToMessageAskAboutTablesList(String source);
+    public void reactToMessageAskAboutTable(String source, int id);
+    public void reactToMessageJoinTable(String source, int id);
+    public void reactToMessageTableStatus(Table table);
 }

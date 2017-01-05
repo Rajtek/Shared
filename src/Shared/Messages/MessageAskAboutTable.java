@@ -24,7 +24,7 @@ public class MessageAskAboutTable extends Message{
 
     @Override
     public void performAction(Shared.Model.ControlerInterface controler) {
-        
+        controler.reactToMessageAskAboutTable(source, id);
     }
     
 

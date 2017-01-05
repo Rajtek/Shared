@@ -24,7 +24,7 @@ public class MessageLogin extends Message {
 
     @Override
     public void performAction(Shared.Model.ControlerInterface controler) {
-        
+        controler.reactToMessageLogin(source, login);
     }
     
 }

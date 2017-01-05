@@ -6,8 +6,6 @@
 package Shared.Model;
 
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  *
@@ -15,11 +13,12 @@ import java.util.List;
  */
 public class Table implements Serializable{
     
-    private int id;
+    private final int id;
     private int numberOfPlayers=0;
     private int maxPlayers;
     private int blind;
     private int turn;
+    private boolean gameStarted=false;
     private Player[] players = new Player[10];
 
     
@@ -36,6 +35,7 @@ public class Table implements Serializable{
     }
     
     public void PlayerJoin(Player player){
+        
         if(!isFull()){
             for(int i=0; i<10; i++){
                 if (players[i]==null){
@@ -47,11 +47,15 @@ public class Table implements Serializable{
             
         }
         
+        if(getNumberOfPlayers()>1) gameStarted=true;
+        else gameStarted=false;
+        
     }
     public boolean isFull(){
-        return numberOfPlayers >= maxPlayers; //nadmiarowe sprawdzenie
+        return numberOfPlayers >= maxPlayers;
     }
     public void PlayerLeave(Player player){
+        
         for(int i=0; i<10; i++){
             if (players[i]==player){
                 players[i]=null;
@@ -59,6 +63,17 @@ public class Table implements Serializable{
                 break;
             }
         }
+        
+        if(getNumberOfPlayers()>1) gameStarted=true;
+        else gameStarted=false;
+    }
+
+    public boolean isGameStarted() {
+        return gameStarted;
+    }
+
+    public void setGameStarted(boolean gameStarted) {
+        this.gameStarted = gameStarted;
     }
     
     
@@ -81,5 +96,18 @@ public class Table implements Serializable{
     public int getBlind() {
         return blind;
     }
-
+    @Override 
+    public String toString(){
+        String temp = "#";
+        temp += id;
+        while (temp.length() < 5) {
+            temp += " ";
+        }
+        temp += "| " + blind + "$/" + blind * 2 + "$";
+        while (temp.length() < 27) {
+            temp += " ";
+        }
+        temp += "| " + numberOfPlayers + "/" + maxPlayers;
+        return temp;
+    }
 }

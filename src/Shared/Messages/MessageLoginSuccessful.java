@@ -32,7 +32,7 @@ public class MessageLoginSuccessful extends Message{
 
     @Override
     public void performAction(Shared.Model.ControlerInterface controler) {
-        controler.ReactToMessageLoginSuccessful(player, tablesList);
+        controler.reactToMessageLoginSuccessful(player, tablesList);
     }
     
 }
