@@ -5,8 +5,8 @@
  */
 package Shared.Messages;
 
-import Shared.Model.Player;
-import Shared.Model.Table;
+import Shared.Model.User;
+import Shared.Model.Room;
 import java.util.List;
 
 /**
@@ -14,19 +14,19 @@ import java.util.List;
  * @author Rajtek
  */
 public class MessageLoginSuccessful extends Message{
-    Player player;
-    private List<Table> tablesList;
-    public MessageLoginSuccessful(String source,Player player,List<Table> tablesList) {
+    User player;
+    private List<Room> tablesList;
+    public MessageLoginSuccessful(String source,User player,List<Room> tablesList) {
         super(source);
         this.player=player;
         this.tablesList=tablesList;
     }
 
-    public Player getPlayer() {
+    public User getUser() {
         return player;
     }
 
-    public List<Table> getTablesList() {
+    public List<Room> getRoomsList() {
         return tablesList;
     }
 

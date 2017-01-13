@@ -14,18 +14,25 @@ import java.util.List;
  */
 public interface ControlerInterface {
     public void reactToMessageLoginFailed();
-    public void reactToMessageLoginSuccessful(Player player, List<Table> tablesList);
-    public void reactToMessageTablesList(List<Table> tablesList);
-    public void reactToMessagePlayerList(Player[] playerList, int maxPlayers, int id);
-    public void reactToMessagePlayersOnTable(Player[] playerlist, int id);
+    public void reactToMessageLoginSuccessful(User user, List<Room> roomsList);
+    public void reactToMessageRoomsList(List<Room> roomsList);
+    public void reactToMessageUserList(List<User> userList, int maxUsers, int id);
+    public void reactToMessageUsersOnRoom(List<User> userlist, int id);
+    public void reactToMessageAnswer(String source, int id, String answer);
     
+    public void reactToMessageImage(String source, int id, int[] data);
     
-    public void reactToMessageCall(int call);
-    public void reactToMessageCheck();
-    public void reactToMessageFold();
+    public void reactToMessageTextMsg(String login, String msg);
+
     public void reactToMessageLogin(String source, String login);
-    public void reactToMessageAskAboutTablesList(String source);
-    public void reactToMessageAskAboutTable(String source, int id);
-    public void reactToMessageJoinTable(String source, int id);
-    public void reactToMessageTableStatus(Table table);
+    public void reactToMessageAskAboutRoomsList(String source);
+    public void reactToMessageAskAboutRoom(String source, int id);
+    public void reactToMessageJoinRoom(String source, int id);
+    public void reactToMessageRoomStatus(boolean gameStarted, int id);
+
+    public void reactToMessagePlayerDrawing(String phrase);
+
+    public void reactToMessageGameStopped();
+
+    public void reactToMessageGoodAnswer(String source, int id, String answer);
 }

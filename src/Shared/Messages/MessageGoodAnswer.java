@@ -9,23 +9,18 @@ package Shared.Messages;
  *
  * @author Rajtek
  */
-public class MessageAskAboutTable extends Message{
-    
-    private final int id;
-    
-    
-    public MessageAskAboutTable(String source, int  id) {
+public class MessageGoodAnswer extends Message{
+    private int id;
+    private String answer;
+
+    public MessageGoodAnswer(String source, int id, String answer) {
         super(source);
-        this.id=id;
-    }
-    public int getID(){
-        return id;
+        this.id = id;
+        this.answer = answer;
     }
 
     @Override
     public void performAction(Shared.Model.ControlerInterface controler) {
-        controler.reactToMessageAskAboutTable(source, id);
+        controler.reactToMessageGoodAnswer(source, id, answer);
     }
-    
-
 }

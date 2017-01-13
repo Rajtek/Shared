@@ -5,24 +5,25 @@
  */
 package Shared.Messages;
 
+import Shared.Model.Room;
+
 /**
  *
  * @author Rajtek
  */
-public class MessageJoinTable extends Message{
+public class MessageRoomStatus extends Message{
+   
+    private final boolean gameStarted;
     private final int id;
-    
-    
-    public MessageJoinTable(String source, int  id) {
+    public MessageRoomStatus(String source, boolean gameStarted, int id) {
         super(source);
+        this.gameStarted=gameStarted;
         this.id=id;
     }
-    public int getID(){
-        return id;
-    }
-
     @Override
     public void performAction(Shared.Model.ControlerInterface controler) {
-        controler.reactToMessageJoinTable(source, id);
+        controler.reactToMessageRoomStatus(gameStarted, id);
     }
+    
+
 }

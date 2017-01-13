@@ -3,18 +3,27 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/F:/Git/PROZ/PROZ.shared/src/Shared/Model/ControlerInterface.java</file>
-            <file>file:/F:/Git/PROZ/PROZ.shared/src/Shared/Messages/MessagePlayersOnTable.java</file>
-            <file>file:/F:/Git/PROZ/PROZ.shared/src/Shared/Messages/MessageLogin.java</file>
-            <file>file:/F:/Git/PROZ/PROZ.shared/src/Shared/Messages/MessageLoginFailed.java</file>
-            <file>file:/F:/Git/PROZ/PROZ.shared/src/Shared/Model/Table.java</file>
-            <file>file:/F:/Git/PROZ/PROZ.shared/src/Shared/Messages/MessageTablesList.java</file>
-            <file>file:/F:/Git/PROZ/PROZ.shared/src/Shared/Messages/MessageJoinTable.java</file>
-            <file>file:/F:/Git/PROZ/PROZ.shared/src/Shared/Messages/MessageAskAboutTablesList.java</file>
-            <file>file:/F:/Git/PROZ/PROZ.shared/src/Shared/Messages/MessageLoginSuccessful.java</file>
-            <file>file:/F:/Git/PROZ/PROZ.shared/src/Shared/Messages/Message.java</file>
-            <file>file:/F:/Git/PROZ/PROZ.shared/src/Shared/Messages/MessagePlayerList.java</file>
-            <file>file:/F:/Git/PROZ/PROZ.shared/src/Shared/Messages/Action.java</file>
+            <file>file:/F:/Git/PROZ%20czat/PROZ.shared/src/Shared/Messages/MessageLoginFailed.java</file>
+            <file>file:/F:/Git/PROZ%20czat/PROZ.shared/src/Shared/Messages/MessageLoginSuccessful.java</file>
+            <file>file:/F:/Git/PROZ%20czat/PROZ.shared/src/Shared/Messages/MessageUsersList.java</file>
+            <file>file:/F:/Git/PROZ%20czat/PROZ.shared/src/Shared/Messages/MessageTextMsg.java</file>
+            <file>file:/F:/Git/PROZ%20czat/PROZ.shared/src/Shared/Messages/MessagePlayerDrawing.java</file>
+            <file>file:/F:/Git/PROZ%20czat/PROZ.shared/src/Shared/Messages/MessageJoinRoom.java</file>
+            <file>file:/F:/Git/PROZ%20czat/PROZ.shared/src/Shared/Messages/MessageGameStopped.java</file>
+            <file>file:/F:/Git/PROZ%20czat/PROZ.shared/src/Shared/Model/Phrases.java</file>
+            <file>file:/F:/Git/PROZ%20czat/PROZ.shared/src/Shared/Model/User.java</file>
+            <file>file:/F:/Git/PROZ%20czat/PROZ.shared/src/Shared/Messages/MessageLogin.java</file>
+            <file>file:/F:/Git/PROZ%20czat/PROZ.shared/src/Shared/Messages/MessageAskAboutRoom.java</file>
+            <file>file:/F:/Git/PROZ%20czat/PROZ.shared/src/Shared/Messages/MessageRoomStatus.java</file>
+            <file>file:/F:/Git/PROZ%20czat/PROZ.shared/src/Shared/Messages/Message.java</file>
+            <file>file:/F:/Git/PROZ%20czat/PROZ.shared/src/Shared/Model/ControlerInterface.java</file>
+            <file>file:/F:/Git/PROZ%20czat/PROZ.shared/src/Shared/Messages/MessageUsersInRoom.java</file>
+            <file>file:/F:/Git/PROZ%20czat/PROZ.shared/src/Shared/Model/Game.java</file>
+            <file>file:/F:/Git/PROZ%20czat/PROZ.shared/src/Shared/Model/Room.java</file>
+            <file>file:/F:/Git/PROZ%20czat/PROZ.shared/src/Shared/Messages/MessageAskAboutRoomsList.java</file>
+            <file>file:/F:/Git/PROZ%20czat/PROZ.shared/src/Shared/Messages/MessageRoomsList.java</file>
+            <file>file:/F:/Git/PROZ%20czat/PROZ.shared/src/Shared/Messages/MessageImage.java</file>
+            <file>file:/F:/Git/PROZ%20czat/PROZ.shared/src/Shared/Messages/MessageAnswer.java</file>
         </group>
     </open-files>
 </project-private>

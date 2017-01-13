@@ -5,7 +5,7 @@
  */
 package Shared.Messages;
 
-import Shared.Model.Table;
+import Shared.Model.Room;
 import java.io.Serializable;
 import java.util.List;
 
@@ -13,18 +13,18 @@ import java.util.List;
  *
  * @author Rajtek
  */
-public class MessageTablesList extends Message implements Serializable{
-    private List<Table> tablesList;
-    public MessageTablesList(String source, List<Table> tablesList) {
+public class MessageRoomsList extends Message implements Serializable{
+    private List<Room> tablesList;
+    public MessageRoomsList(String source, List<Room> tablesList) {
         super(source);
         this.tablesList=tablesList;
     }
-    public List<Table> getTablesList(){
+    public List<Room> getRoomsList(){
         return tablesList;
     }
 
     @Override
     public void performAction(Shared.Model.ControlerInterface controler) {
-        controler.reactToMessageTablesList(tablesList);
+        controler.reactToMessageRoomsList(tablesList);
     }
 }

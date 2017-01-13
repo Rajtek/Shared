@@ -5,28 +5,32 @@
  */
 package Shared.Messages;
 
-import Shared.Model.Table;
 
 /**
  *
  * @author Rajtek
  */
-public class MessageTableStatus extends Message{
-   
-    private final Table table;
-    public MessageTableStatus(String source, Table table) {
+public class MessageImage extends Message{
+    
+    private final int id;
+    private final int[] data;
+    
+    public MessageImage(String source, int  id, int[] data) {
         super(source);
-        this.table=table;
+        this.id=id;
+        this.data= data;
+    }
+    public int getID(){
+        return id;
     }
 
-    public Table getTable() {
-        return table;
+    public int[] getData() {
+        return data;
     }
     
     @Override
     public void performAction(Shared.Model.ControlerInterface controler) {
-        controler.reactToMessageTableStatus(table);
+        controler.reactToMessageImage(source, id, data);
     }
     
-
 }

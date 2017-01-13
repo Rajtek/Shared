@@ -5,25 +5,26 @@
  */
 package Shared.Messages;
 
-import Shared.Model.Player;
+import Shared.Model.User;
+import java.util.List;
 
 /**
  *
  * @author Rajtek
  */
-public class MessagePlayerList extends Message{
-    private Player[] players = new Player[10];
-    private final int maxPlayers;
+public class MessageUsersList extends Message{
+    private List<User> players;
+    private final int maxUsers;
     private final int id;
-    public int getMaxPlayers() {
-        return maxPlayers;
+    public int getMaxUsers() {
+        return maxUsers;
     }
     
     
-    public MessagePlayerList(String source, Player[] players, int maxPlayers, int id ) {
+    public MessageUsersList(String source, List<User> players, int maxUsers, int id ) {
         super(source);
         this.players=players;
-        this.maxPlayers=maxPlayers;
+        this.maxUsers=maxUsers;
         this.id=id;
     }
 
@@ -31,13 +32,13 @@ public class MessagePlayerList extends Message{
         return id;
     }
     
-    public Player[] getPlayersList(){
+    public List<User> getUsersList(){
         return players;
     }
 
     @Override
     public void performAction(Shared.Model.ControlerInterface controler) {
-        controler.reactToMessagePlayerList(players, maxPlayers, id);
+        controler.reactToMessageUserList(players, maxUsers, id);
     }
     
 }

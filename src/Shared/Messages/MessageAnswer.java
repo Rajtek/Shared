@@ -9,13 +9,19 @@ package Shared.Messages;
  *
  * @author Rajtek
  */
-public class MessageCheck extends Message{
-    public MessageCheck(String source) {
+public class MessageAnswer extends Message {
+
+    private int id;
+    private String answer;
+
+    public MessageAnswer(String source, int id, String answer) {
         super(source);
+        this.id = id;
+        this.answer = answer;
     }
 
     @Override
     public void performAction(Shared.Model.ControlerInterface controler) {
-        controler.reactToMessageCheck();
+        controler.reactToMessageAnswer(source, id, answer);
     }
 }

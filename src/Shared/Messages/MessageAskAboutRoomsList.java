@@ -9,20 +9,16 @@ package Shared.Messages;
  *
  * @author Rajtek
  */
-public class MessageCall extends Message{
-    private final int call;
-    public MessageCall(String source, int call) {
+public class MessageAskAboutRoomsList extends Message{
+    
+    
+    public MessageAskAboutRoomsList(String source) {
         super(source);
-        this.call=call;
     }
 
-    public int getCall() {
-        return call;
-    }
-    
+
     @Override
     public void performAction(Shared.Model.ControlerInterface controler) {
-        controler.reactToMessageCall(call);
+        controler.reactToMessageAskAboutRoomsList(source);
     }
-    
 }

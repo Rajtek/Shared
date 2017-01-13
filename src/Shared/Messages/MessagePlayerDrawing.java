@@ -9,16 +9,17 @@ package Shared.Messages;
  *
  * @author Rajtek
  */
-public class MessageAskAboutTablesList extends Message{
-    
-    
-    public MessageAskAboutTablesList(String source) {
+public class MessagePlayerDrawing extends Message{
+    private final int id;
+    private final String phrase;
+    public MessagePlayerDrawing(String source, int id, String phrase) {
         super(source);
+        this.id=id;
+        this.phrase=phrase;
     }
-
-
     @Override
     public void performAction(Shared.Model.ControlerInterface controler) {
-        controler.reactToMessageAskAboutTablesList(source);
+        controler.reactToMessagePlayerDrawing(phrase);
     }
+    
 }
