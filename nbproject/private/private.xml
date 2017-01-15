@@ -10,7 +10,6 @@
             <file>file:/F:/Git/PROZ%20czat/PROZ.shared/src/Shared/Messages/MessagePlayerDrawing.java</file>
             <file>file:/F:/Git/PROZ%20czat/PROZ.shared/src/Shared/Messages/MessageJoinRoom.java</file>
             <file>file:/F:/Git/PROZ%20czat/PROZ.shared/src/Shared/Messages/MessageGameStopped.java</file>
-            <file>file:/F:/Git/PROZ%20czat/PROZ.shared/src/Shared/Model/Phrases.java</file>
             <file>file:/F:/Git/PROZ%20czat/PROZ.shared/src/Shared/Model/User.java</file>
             <file>file:/F:/Git/PROZ%20czat/PROZ.shared/src/Shared/Messages/MessageLogin.java</file>
             <file>file:/F:/Git/PROZ%20czat/PROZ.shared/src/Shared/Messages/MessageAskAboutRoom.java</file>
@@ -20,7 +19,9 @@
             <file>file:/F:/Git/PROZ%20czat/PROZ.shared/src/Shared/Messages/MessageUsersInRoom.java</file>
             <file>file:/F:/Git/PROZ%20czat/PROZ.shared/src/Shared/Model/Game.java</file>
             <file>file:/F:/Git/PROZ%20czat/PROZ.shared/src/Shared/Model/Room.java</file>
+            <file>file:/F:/Git/PROZ%20czat/PROZ.shared/src/Shared/Messages/Action.java</file>
             <file>file:/F:/Git/PROZ%20czat/PROZ.shared/src/Shared/Messages/MessageAskAboutRoomsList.java</file>
+            <file>file:/F:/Git/PROZ%20czat/PROZ.shared/src/Shared/Messages/MessageGoodAnswer.java</file>
             <file>file:/F:/Git/PROZ%20czat/PROZ.shared/src/Shared/Messages/MessageRoomsList.java</file>
             <file>file:/F:/Git/PROZ%20czat/PROZ.shared/src/Shared/Messages/MessageImage.java</file>
             <file>file:/F:/Git/PROZ%20czat/PROZ.shared/src/Shared/Messages/MessageAnswer.java</file>

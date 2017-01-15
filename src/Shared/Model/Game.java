@@ -24,8 +24,10 @@ public class Game implements Serializable {
     }
 
     public boolean checkPhrase(String answer) {
-        System.out.println("sprawdzarka:"+actualPhrase+actualPhrase.length());
         return answer.equals(actualPhrase);
+    }
+    public String getActual(){
+        return actualPhrase;
     }
 
     public String getNewPhrase() {

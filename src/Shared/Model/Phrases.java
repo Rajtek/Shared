@@ -37,6 +37,7 @@ public class Phrases {
         // ODCZYT KOLEJNYCH LINII Z PLIKU:
         try {
             while ((linia = bfr.readLine()) != null) {
+                linia=linia.trim();
                 phrases.add(linia);
             }
         } catch (IOException e) {

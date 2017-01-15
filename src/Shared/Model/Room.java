@@ -20,6 +20,11 @@ public class Room implements Serializable{
     private List<User> users = new ArrayList<>();
     private int drawingPlayerIndex=-1;
     
+    
+    
+    public String getActual(){
+        return game.getActual();
+    }
     public void startGame(){
         drawingPlayerIndex=(drawingPlayerIndex+1)%users.size();
         

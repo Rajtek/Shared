@@ -13,7 +13,7 @@ import java.util.List;
  * @author Rajtek
  */
 public class MessageUsersList extends Message{
-    private List<User> players;
+    private List<User> users;
     private final int maxUsers;
     private final int id;
     public int getMaxUsers() {
@@ -21,9 +21,9 @@ public class MessageUsersList extends Message{
     }
     
     
-    public MessageUsersList(String source, List<User> players, int maxUsers, int id ) {
+    public MessageUsersList(String source, List<User> users, int maxUsers, int id ) {
         super(source);
-        this.players=players;
+        this.users=users;
         this.maxUsers=maxUsers;
         this.id=id;
     }
@@ -33,12 +33,12 @@ public class MessageUsersList extends Message{
     }
     
     public List<User> getUsersList(){
-        return players;
+        return users;
     }
 
     @Override
     public void performAction(Shared.Model.ControlerInterface controler) {
-        controler.reactToMessageUserList(players, maxUsers, id);
+        controler.reactToMessageUserList(users, maxUsers, id);
     }
     
 }
